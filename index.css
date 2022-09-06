@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #ffe9db;
+    --dark: #350363;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(231, 28, 28);
+}
+
+main {
+    max-width: 100%;
+    width: 500px;
+
+    text-align: center;
+    border: solid var(--dark);
+    background-color: var(--background);
+    border-width: 0.8rem;
+    border-radius: 1rem;
+    padding: 6rem 3rem;
+}
+h2 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+img {
+    width: 99%;
+    max-height: 22rem;
+    height: auto;
+    margin: 1rem 0 4rem 0;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+button {
+    min-width: 23rem;
+    background: #e93b05;
+    border-radius: 0.8rem;
+    padding: 1.5rem 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+    margin: 1rem;
+
+}
+
+#welcomescreen {
+    height: 69vh;
+    padding: 0;
+    max-width: 100%;
+    width: 500PX;
+}
+
+#gamearea {
+    /* height: 50vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#newgamebutton {
+    margin: 1rem 0;
+}
+
+#inputbox {
+    margin: 4rem 0;
+    padding: 2rem 0;
+    width: 25rem;
+    border: 0.1rem solid lightgray;
+    text-align: center;
+    background: transparent;
+}
+
+.stats {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin: 0 1rem;
+}
+
+info p {
+    margin: 2rem 3rem;
+}
+
+.info span {
+    font-size: 2rem;
+    color: #e93b05;
+    margin: 2rem;
+}
+
+@media(max-width: 1296px) {
+    body {
+
+        background-color: aqua;
+    }
+    main {
+        padding: 0rem;
+        margin-top: 15%;
+
+    }
+    #welcomescreen {
+        height: 0%;
+    }
+}
+
+@media(max-width: 982px) {
+    body {
+        background-color: #e93b05;
+        margin-top: 10%;
+    }
+    main {
+        padding: 0;
+        margin: 9rem
+    }
+}
+
+@media(max-width: 670px) {
+    body {
+        margin-top: 18%;
+    }
+
+}
+
+@media(max-width: 370px) {
+    body {
+        margin-top: 23%;
+    }
+  
+}
